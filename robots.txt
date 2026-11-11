@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oaefsboe007.github.io/organ/sitemap.xml
