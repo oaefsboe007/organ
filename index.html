@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
 <title>Virtual Pipe Organ – Free Online Pipe Organ Simulator with 200+ Stops, 5 Manuals &amp; Pedalboard</title>
 <meta name=description content="Play a free virtual pipe organ in your browser: 5 manuals, 32-note pedalboard, 200+ stops, couplers, swell shoes, crescendo, tremulants, reverb, historic temperaments and MIDI. No download.">
 <meta name=keywords content="virtual pipe organ, online organ, pipe organ simulator, church organ, organ stops, pedalboard, Web MIDI organ, Bach organ, Cavaillé-Coll, Schnitger, swell pedal, crescendo pedal, couplers, free organ">
@@ -32,6 +32,7 @@ summary{cursor:pointer;color:#f3d38a;font-size:14px}summary em{color:#777;font-s
 @media(max-width:700px){body{margin:6px}#jambs{grid-template-columns:1fr}.sg{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}.ct input[type=range]{width:80px}}
 .man{overflow-x:auto}.kb{min-width:820px}.kb.pdl{min-width:560px}
 </style>
+</head><body>
 <h1>Virtual Pipe Organ</h1>
 <small>5 manuals + 32-note pedalboard, ~210 stops, 25 couplers, octave couplers, tremulants, swell shoes, crescendo, sforzando, sustain, pistons, temperaments, MIDI.
 Click stops/keys, or type: lower row <b>Z S X D…</b> = pedals, upper row <b>Q 2 W 3…</b> = active manual. ↑↓ octave · ←→ swell shoe · PgUp/PgDn manual · Space sustain · Esc panic.
@@ -424,3 +425,4 @@ onkeyup=e=>{if(e.code=='Space'){setSus(0);return}const k=KD[e.code];if(k){releas
 setInterval(()=>{$('st').textContent=`${V.size} keys held · ${nosc} oscillators · ${$('st').dataset.n||0} stops sounding`},400);
 setReg({...lvlReg(3),cp:['G>P']});
 </script>
+</body></html>
